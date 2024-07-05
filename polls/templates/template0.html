@@ -1,0 +1,19 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Python A3</title>
+</head>
+<body>
+  <form method="post" action="{% url 'departement' %}">
+    {% csrf_token %}
+    <label for="texte_utilisateur">Entrez le code du département :</label>
+    <input type="text" id="texte_utilisateur" name="texte_utilisateur">
+    <button type="submit">Soumettre</button>
+  </form>
+  <a href="http://127.0.0.1:8000/polls/">Retour en arriere</a>
+     <img src="data:image/png;base64,{{ plot_html }}" alt="Plot">
+</body>
+</html>
+

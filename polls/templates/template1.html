@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Projet Python A3</title>
+</head>
+<body>
+    
+    <label for="model-select">Choose a Model:</label>
+    
+    <form action="apply_Model" > 
+    <label for="model-select">Choisis un model pour la valeur fonciere en France:</label>
+        <select name="model" id="model-select" onchange='if(this.value !=0) { this.form.submit(); }'>
+            <option value="0">--Please choose a model--</option>
+            <option value="Moyenne">Moyenne</option>
+            <option value="Minimum">Minimum</option>
+            <option value="Maximum">Maximum</option>
+            <option value="Dep">Choisir le département</option>
+        </select>
+   </form>
+   
+   <img src="data:image/png;base64,{{ plot_html }}" alt="Plot">
+   
+</body>
+</html>
